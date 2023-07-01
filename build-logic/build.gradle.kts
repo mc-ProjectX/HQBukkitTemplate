@@ -7,6 +7,7 @@ plugins {
 val properties = loadProperties(rootProject.gradle.parent?.rootProject?.projectDir?.path + "/gradle.properties")
 val kotlinVersion = properties.getProperty("kotlinVersion")
 val kspVersion = properties.getProperty("kspVersion")
+val shadowPluginVersion = properties.getProperty("shadowVersion")
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
@@ -16,6 +17,7 @@ dependencies {
         exclude(group = "org.jetbrains.kotlin")
     }
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2")
+    implementation("com.github.johnrengelman.shadow:com.github.johnrengelman.shadow.gradle.plugin:$shadowPluginVersion")
     api(gradleApi())
 }
 

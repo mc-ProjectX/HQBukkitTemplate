@@ -2,6 +2,7 @@ import resourcegenerator.bukkit.excludedRuntimeDependencies
 
 plugins {
     id("hq.shared")
+    id("hq.shadow")
     id("hq.resource-generator")
 }
 
@@ -15,11 +16,4 @@ bukkitResourceGenerator {
 dependencies {
     compileOnly(libs.spigot.api)
     compileOnly(framework.core)
-}
-
-tasks.jar {
-    archiveBaseName.set(project.rootProject.name)
-    archiveVersion.set("")
-    archiveClassifier.set("")
-    destinationDirectory.set(file(rootProject.projectDir.path + "/build_outputs"))
 }
