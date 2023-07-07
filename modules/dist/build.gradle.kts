@@ -16,4 +16,6 @@ bukkitResourceGenerator {
 dependencies {
     compileOnly(libs.spigot.api)
     compileOnly(framework.core)
+    runtimeOnly(project(":modules:core"))
+    runtimeOnly(project(":modules:api"))
 }
