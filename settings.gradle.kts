@@ -1,4 +1,13 @@
-rootProject.name = "HQBukkitTemplate"
+rootProject.name = getProperty("projectName")
+
+pluginManagement {
+    plugins {
+        id("kr.hqservice.resource-generator.bukkit") version "1.0.0"
+    }
+    repositories {
+        maven("https://maven.hqservice.kr/repository/maven-public")
+    }
+}
 
 dependencyResolutionManagement {
     repositories {

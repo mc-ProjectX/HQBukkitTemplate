@@ -1,9 +1,7 @@
-import resourcegenerator.bukkit.excludedRuntimeDependencies
-
 plugins {
     id("hq.shared")
     id("hq.shadow")
-    id("hq.resource-generator")
+    id("kr.hqservice.resource-generator.bukkit")
 }
 
 bukkitResourceGenerator {
