@@ -11,9 +11,9 @@ dependencies {
 publishing {
     publications {
         create<MavenPublication>("nexus") {
-            groupId = extra("projectGroup").toString()
-            artifactId = extra("projectName").toString()
-            version = extra("projectVersion").toString()
+            groupId = extra["projectGroup"].toString()
+            artifactId = extra["projectName"].toString()
+            version = extra["projectVersion"].toString()
             from(components["java"])
 
             pom {
