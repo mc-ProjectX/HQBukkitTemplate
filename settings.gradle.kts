@@ -32,6 +32,12 @@ dependencyResolutionManagement {
     }
 }
 
+file(rootProject.projectDir.path + "/credentials.gradle.kts").let {
+    if (it.exists()) {
+        apply(it.path)
+    }
+}
+
 includeBuild("build-logic")
 includeAll("modules")
 
