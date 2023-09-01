@@ -22,12 +22,12 @@ dependencyResolutionManagement {
 
         }
         create("framework") {
-            library("core", "kr.hqservice:hqframework-bukkit-core:1.0.1-SNAPSHOT")
-            library("command", "kr.hqservice:hqframework-bukkit-command:1.0.1-SNAPSHOT")
-            library("nms", "kr.hqservice:hqframework-bukkit-nms:1.0.1-SNAPSHOT")
-            library("inventory", "kr.hqservice:hqframework-bukkit-inventory:1.0.1-SNAPSHOT")
-            library("database", "kr.hqservice:hqframework-bukkit-database:1.0.1-SNAPSHOT")
-            library("scheduler", "kr.hqservice:hqframework-bukkit-scheduler:1.0.1-SNAPSHOT")
+            library("core", "kr.hqservice:hqframework-bukkit-core:${getProperty("hqFrameworkVersion")}")
+            library("command", "kr.hqservice:hqframework-bukkit-command:${getProperty("hqFrameworkVersion")}")
+            library("nms", "kr.hqservice:hqframework-bukkit-nms:${getProperty("hqFrameworkVersion")}")
+            library("inventory", "kr.hqservice:hqframework-bukkit-inventory:${getProperty("hqFrameworkVersion")}")
+            library("database", "kr.hqservice:hqframework-bukkit-database:${getProperty("hqFrameworkVersion")}")
+            library("scheduler", "kr.hqservice:hqframework-bukkit-scheduler:${getProperty("hqFrameworkVersion")}")
         }
     }
 }
