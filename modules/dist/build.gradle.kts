@@ -6,8 +6,9 @@ plugins {
 
 bukkitResourceGenerator {
     main = "kr.hqservice."
-    name = ""
+    name = "${extra["projectName"]}"
     apiVersion = "1.13"
+    depend = listOf("HQFramework")
     libraries = excludedRuntimeDependencies()
 }
 
