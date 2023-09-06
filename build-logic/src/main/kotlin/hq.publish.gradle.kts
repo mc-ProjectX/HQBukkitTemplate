@@ -2,7 +2,7 @@ import org.gradle.api.publish.maven.MavenPublication
 import org.gradle.kotlin.dsl.*
 
 plugins {
-    id("hq.shared")
+    java
     `maven-publish`
 }
 

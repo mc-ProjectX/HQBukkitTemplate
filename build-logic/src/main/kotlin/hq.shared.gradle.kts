@@ -1,14 +1,10 @@
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
-
 plugins {
     kotlin("jvm")
     kotlin("plugin.serialization")
 }
 
-val projectGroup: String by project
-group = projectGroup
-val projectVersion: String by project
-version = projectVersion
+group = extra["projectGroup"]!!.toString()
+version = extra["projectVersion"]!!.toString()
 
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
