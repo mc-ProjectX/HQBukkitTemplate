@@ -9,8 +9,8 @@ plugins {
 publishing {
     publications {
         create<MavenPublication>("nexus") {
-            groupId = extra["projectGroup"].toString()
-            artifactId = extra["projectName"].toString()
+            groupId = extra["projectGroup"].toString().lowercase()
+            artifactId = extra["projectName"].toString().lowercase()
             version = extra["projectVersion"].toString()
             from(components["java"])
 
