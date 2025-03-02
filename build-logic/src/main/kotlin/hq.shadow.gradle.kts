@@ -1,6 +1,6 @@
 plugins {
     java
-    id("com.gradleup.shadow")
+    id("com.github.johnrengelman.shadow")
 }
 
 tasks.shadowJar {
