@@ -11,5 +11,5 @@ tasks.shadowJar {
 }
 
 configurations.runtimeClasspath.get().apply {
-    exclude("org.jetbrains.kotlin", "*")
+    exclude("org.jetbrains.kotlin", "kotlin-stdlib-jdk8")
 }
