@@ -5,7 +5,7 @@ plugins {
 }
 
 bukkitResourceGenerator {
-    main = "kr.project-x."
+    main = "kr.mcprojectx."
     name = "${extra["projectName"]}"
     apiVersion = "1.13"
     depend = listOf("HQFramework")
